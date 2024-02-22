@@ -1,6 +1,5 @@
 {
     "name": "pyright-root",
-    "private": true,
     "scripts": {
         "postinstall": "npm run bootstrap",
         "bootstrap": "node ./build/skipBootstrap.js || lerna bootstrap",
