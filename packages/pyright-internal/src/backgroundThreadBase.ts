@@ -59,11 +59,6 @@ export abstract class BackgroundThreadBase {
             level: LogLevel.Log,
         };
     }
-
-    protected shutdown() {
-        this.fs.dispose();
-        this.parentPort?.close();
-    }
 }
 
 export function createConfigOptionsFrom(jsonObject: any): ConfigOptions {
